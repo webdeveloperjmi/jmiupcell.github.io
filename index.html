@@ -1,0 +1,340 @@
+---
+layout: default
+title: UPCJMI welcomes you
+css: index
+description: Welcome to University Placement Cell, Jamia Millia Islamia. In Jamia we belive in.
+carousel: index
+---
+
+<div id="landing">
+	<div class="holder" style="height: 100vh">
+		<div id="carosusel">
+			<div class="carousel carousel-slider" style="position:absolute;min-height: 100vh;">
+				<span class="carousel-item">
+					<div class="bg-img"
+						style="background-image: url('{{ site.baseurl }}/assets/images/carousel/index/Emphaiso-team.jpg');"></div>
+				</span>
+				<span class="carousel-item">
+					<div class="bg-img"
+						style="background-image: url('{{ site.baseurl }}/assets/images/carousel/index/VC-with-PM.jpg');"></div>
+				</span>
+				<span class="carousel-item">
+					<div class="bg-img"
+						style="background-image: url('{{ site.baseurl }}/assets/images/carousel/index/VC-with-President.jpg');"></div>
+				</span>
+				<span class="carousel-item">
+					<div class="bg-img" style="background-image: url('{{ site.baseurl }}/assets/images/carousel/index/TPO.jpg');"></div>
+				</span>
+			</div>
+		</div>
+		<div class="content" style="flex: 1;align-self: center">
+			<div style="height: 30vh"></div>
+			<div class="container">
+				<div class="welcome white-text">
+					Welcome to
+				</div>
+				<h1 class="white-text with-sub-heading">
+					University Placement Cell <br>
+					<span>
+						Jamia Millia Islamia
+					</span>
+				</h1>
+
+			</div>
+			<div class="container hide-on-med-and-down" style="margin-bottom: 20px;">
+				<div class=""
+					style="display: flex;align-items: baseline; justify-content: space-between;flex-direction: row;width: 100%;">
+					{% for award in site.data.why-recruit %}
+					<div class="" style="margin-left: 10px; margin-right: 10px;">
+						<h3 class="hide">
+							{{award.title}} recruit from UPCJMI
+						</h3>
+						<img src="{{ site.baseurl }}/assets/images/badges/{{award.image}}" class="responsive-img"
+							alt="{{award.title}} - recruit from University Placement Cell, Jamia Millia Isalmia">
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="row center-all">
+				<div href="student" class="btn-small white center">
+					<a href="student" class="black-text">
+						Job Readiness Program
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="about-us" class="copy-protect section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h2 class="black-text">
+					About us
+				</h2>
+			</div>
+		</div>
+		<div class="row center-all" id="about-jamia">
+			<div class="col s12 m8 l8" id="about-jamia-content">
+				<b style="font-size: 2rem">
+					Jamia Millia Islamia
+				</b>
+				was founded at Aligarh in the United Province, India in 1920 during the Khilafat and
+				Non-Cooperation Movement in response to Gandhiji's call to boycott government supported
+				educational institutions. JMI moved from Aligarh to Delhi in the year 1925 and was made a
+				central university by Parliamentary act of 1988. Today, Jamia Millia Islamia is one of the most
+				prominent and promising central university of the country. JMI was recently awarded an 'A' Grade
+				by NAAC (National Assessment and Accreditation Council).
+			</div>
+			<div class="col s12 m4 l4 center-all">
+				<img class="responsive-img" src="{{ site.baseurl }}/assets/images/jamia-logo.png" alt="Jamia Millia Islamia Logo">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m6 center">
+				<img class="responsive-img" src="{{ site.baseurl }}/assets/images/vc-jamia-millia-islamia.png"
+					alt="Rihan Khan Suri - Traning and Placement Ofiicer, Jamia Millia Islamia">
+				<br>
+				<b style="font-size: 2rem">
+					Prof. Najma Akhtar
+				</b>
+				<br>
+				<b>
+					Vice Chancellor
+				</b> <br>
+				Jamia Millia Islamia
+			</div>
+
+			<div class="col s12 m6 center">
+				<img class="responsive-img" src="{{ site.baseurl }}/assets/images/rihan-khan-suri-tpo-jamia-miilia-islamia.png"
+					alt="Rihan Khan Suri - Traning and Placement Ofiicer, Jamia Millia Islamia">
+				<br>
+				<b style="font-size: 2rem">
+					Dr. Rihan Khan Suri
+				</b>
+				<br>
+				<b>
+					Training and Placement Offer
+				</b> <br>
+				Jamia Millia Islamia
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="recruit" class="copy-protect section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h2 style="text-align: center">
+					Top Recruiters
+				</h2>
+			</div>
+		</div>
+		<div class="row center-all" style="flex-wrap: wrap">
+			{% for company in site.data.companies.top-compaines %}
+			<div class="col s6 m4" style="margin-bottom: 5vw">
+				<div class="container">
+					<h3 class="hide">
+						{{company.name}} recruited from UPCJMI
+					</h3>
+					<img src="{{ site.baseurl }}/assets/images/top-companies/{{company.image}}" class="responsive-img"
+						alt="{{company.name}} - Jamia Millia Isalmia's Top Recruiter">
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="row center-all">
+			<div href="#!" class="button black center">
+				<a href="mailto:rsuri@jmi.ac.in" class="white-text">
+					recruit from JMI
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="why-recruit" class="section copy-protect">
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h2>
+					Rankings of Jamia Millia Islamia
+				</h2>
+			</div>
+		</div>
+		<div class="row badges" style="font-size: 1.1rem">
+			<div class="col s12 m6 center-all">
+				<div>
+					<h2 style="color: gold; margin: 0">
+						3rd
+					</h2>
+					Ranked at 3rd among top 25<sup>th</sup> Central Universities.Ranked 17<sup>th</sup> among top 100
+					universities
+					by Outlook-I Care India University Rankings 2019.
+				</div>
+			</div>
+
+			<div class="col s12 m6 center-all">
+				<div>
+					<h2 style="color: gold; margin: 0">
+						13th
+					</h2>
+					Retained 13<sup>th</sup> rank in united QS world wide Ranking 2020 at 751-800
+					with research intensity been described as "very high”. At 334 globally, the Faculty Student ratio is
+					the intensity described is very high.
+				</div>
+			</div>
+
+			<div class="col s12 m6 center-all">
+				<div>
+					<h2 style="color: gold; margin: 0">
+						188th
+					</h2>
+					Ranked 188 in world by Times Higher Education World in Ranking 2019.
+				</div>
+			</div>
+
+			<div class="col s12 m6 center-all">
+				<div>
+					<h2 style="color: gold; margin: 0">
+						177th
+					</h2>
+					Ranked 177<sup>th</sup> in Asia by QS World Universities Ranking.
+				</div>
+			</div>
+
+			<div class="col s12 m6 center-all">
+				<div>
+					<h2 style="color: gold; margin: 0">
+						19
+					</h2>
+					19<sup>th</sup> Rank in India by NIRF in 2019.
+				</div>
+			</div>
+			<div class="col s12 m6 center-all">
+				<div>
+					<h2 style="color: gold; margin: 0">
+						20th
+					</h2>
+					The Faculty of Law was ranked sixth in India by Outlook India's "Top 25 Law Colleges in 2017" and
+					20th
+					in India by The Week's "Top Law Colleges 2017".
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6 l4 button center push-l4 push-m3" id="send-recruit-proposal-btn">
+				<a href="mailto:rsuri@jmi.ac.in">
+					BE A Recruiter
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="contact" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h2>
+					Contact us
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 l6">
+				<p style="font-size: 1.5rem">
+					Dr. Rihan Khan Suri, <br>
+					Training & Placement Officer <br>
+					University Placement Cell <br>
+					125, Faculty of Engineering & Technology Building <br>
+					Jamia Millia Islamia, New Delhi-ll0025 <br> <br>
+					Phone Nos. <a href="tel:+258026989106">26989106</a> (D) <a href="tel:+258126981717">26981717</a>
+					<br>
+					Extn.: 2580/81, <br>
+				</p>
+			</div>
+			<div class="col s12 l6">
+				<p style="font-size: 1.5rem">
+					Mailing addesses <br><br>
+
+					<a href="mailto:upc@jmi.ac.in">
+						University Placement Cell: upc@jmi.ac.in
+					</a>
+					<br>
+					<a href="mailto:rsuri@jmi.ac.in">
+						TPO: rsuri@jmi.ac.in
+					</a>
+					<br>
+				</p>
+			</div>
+		</div>
+
+		<div id="ask-for-assistance-modal" class="modal white">
+			<div class="modal-content">
+				<h3>
+					Questions for us?
+				</h3>
+				<div class="row">
+					<form class="col s12"
+						submit="https://script.google.com/macros/s/AKfycbwRj5x_BwJNCSTlSIxhPhDYEobDjdewtMsvJR3Y6PY3CQ99IrEH/exec"
+						method="POST" name="contact-sheet-form">
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="Name" name="Name" type="text" class="validate" required>
+								<label for="Name">Your Name</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="Email" name="Email" type="email" class="validate" required>
+								<label for="Email">Email</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="ContactNumber" name="ContactNumber" type="text" class="validate">
+								<label for="ContactNumber">Contact Number</label>
+							</div>
+							<div class="input-field col s12">
+								<textarea id="Question" name="Question" class="materialize-textarea"></textarea>
+								<label for="Question">Question</label>
+							</div>
+							<div class="col s12">
+								<div href="#!" class="button black center button-normal">
+									<button type="submit" class="white-text">
+										Submit
+									</button>
+								</div>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row center-all">
+			<div href="#!" class="button black center">
+				<a href="#ask-for-assistance-modal" class="white-text modal-trigger">
+					Ask for assitance
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="reach-us" class="">
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h2>
+					Reach us
+				</h2>
+			</div>
+		</div>
+	</div>
+	<iframe width="100%" height="320px" id="map" style="margin-left:auto;margin-right:auto" id="gmap_canvas"
+		src="https://maps.google.com/maps?q=university%20placement%20cell&t=&z=13&ie=UTF8&iwloc=&output=embed"
+		frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
